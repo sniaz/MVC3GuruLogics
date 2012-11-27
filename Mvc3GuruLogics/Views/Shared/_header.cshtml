@@ -1,0 +1,56 @@
+﻿<div id="header">
+        <div id="header_inner" class="fixed">
+            <div id="logo">
+                <h1>
+                    <span>GuruLogics</span></h1>
+                <h2>
+                    a solution to the real problems</h2>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>
+                        @if (ViewBag.Curpage == "Home")
+                        { 
+                            <a href="#" class="active" >Home</a>
+                        }
+                        else
+                        {    <a  href="@Url.Content("~/Home")">Home</a>
+                        }
+                    </li>
+                    <li>
+
+
+                    @if (ViewBag.Curpage == "AboutUs")
+                    { 
+                            <a class="active" href="#">About Us</a>
+                    }
+                    else
+                    {        <a href="@Url.Content("~/Home/aboutus")">About Us</a>
+                    }
+                        
+                    </li>
+                    
+                    <li>
+                    
+                    @if (ViewBag.Curpage == "Services")
+                    { 
+                            <a class="active" href="#">Services</a>
+                    }
+                    else
+                    {        <a href="@Url.Content("~/Home/services")">Services</a>
+                    }
+                   
+                    </li>
+                    
+                    <li> @if (ViewBag.Curpage == "ContactUs")
+                    { 
+                            <a class="active" href="#">Contact Us</a>
+                    }
+                    else
+                    {        <a href="@Url.Content("~/Home/ContactUs")">Contact Us</a>
+                    }
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "About Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ <div id="primaryContent_2columns">
+            <div id="columnA_2columns">
+                <h3>
+                    About Company</h3>
+                <p>
+                    Founded in 2011, The GuruLogics provides world class software
+                    development services to software companies, enterprises, information providers,
+                    business services firms and consulting companies. With offices and partners in the
+                    USA, Europe, Middle East and Asia, we serve a growing list of clients from the Fortune
+                    500 to entrepreneurial startups. The company management and technical teams consist of
+                    professionals with international education and work experiences that span industries
+                    such as financial services, manufacturing, logistics, healthcare, professional services,
+                    information and data providers, and other services sectors. From web portals to
+                    large-scale enterprise applications, Gurulogics operates through innovative and flexible
+                    engagement models and mature processes to help companies achieve faster time to
+                    market, improved software quality and scalable operations while reducing development
+                    costs and manpower challenges.
+                </p>
+                </div>
+           
+        </div>
+        <div id="secondaryContent_2columns">
+          @{RenderPartialExtensions.RenderPartial(this.Html, "_RightPane");}
+        </div>
+        <br class="clear" />
+
